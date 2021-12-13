@@ -1,7 +1,7 @@
 ﻿
 namespace NoteApp
 {
-    partial class Form1
+    partial class NoteApp
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,35 @@ namespace NoteApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.title = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(12, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(114, 29);
+            this.title.TabIndex = 0;
+            this.title.Text = "Note App";
+            // 
+            // NoteApp
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.title);
+            this.Name = "NoteApp";
+            this.Text = "Note App";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label title;
     }
 }
 
