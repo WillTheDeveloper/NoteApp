@@ -90,6 +90,7 @@ namespace NoteApp
             this.savebutton.TabIndex = 5;
             this.savebutton.Text = "Save";
             this.savebutton.UseVisualStyleBackColor = true;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
             // 
             // NoteApp
             // 

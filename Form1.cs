@@ -16,5 +16,10 @@ namespace NoteApp
         {
             InitializeComponent();
         }
+
+        private void savebutton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
